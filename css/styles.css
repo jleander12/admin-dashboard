@@ -55,7 +55,9 @@
 .your-projects {
     grid-row: 1;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: 28px auto;
+    align-items: top;
     gap: 16px 16px;
     padding: 0;
 }
@@ -72,11 +74,12 @@ h6 {
 
 .your-projects > h6 {
     grid-column: 1 / -1;
+    max-height: fit-content;
 }
 
-
-
 .project-card {
+    min-width: 300px;
+    min-height: 200px;
     background-color: white;
     box-shadow: 3px 3px 5px #CCCCCC;
     border-radius: 8px;
@@ -91,10 +94,21 @@ h6 {
     padding: 16px;
 }
 
-.card > .title, .project-card > .title {
+.project-card > .title {
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 4px;
+}
+
+.card > .title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.card > .card-text {
+    font-size: 0.9rem;
+    color: #666666;
 }
 
 .card-text {
@@ -149,7 +163,8 @@ h6 {
     display: grid;
     grid-template-rows: 2fr 2fr;
     gap: 4px;
-    box-shadow: 0 5px 5px #999999;
+    box-shadow: 0 3px 5px #CCCCCC;
+    z-index:9999;
 }
 
 .search {
@@ -157,7 +172,7 @@ h6 {
     align-items: center;
     padding: 16px;
     gap: 12px;
-    margin: 0 18px;
+    margin: 0 24px;
 }
 
 .search > input {
@@ -181,8 +196,8 @@ h6 {
 
 .actions {
     display: flex;
-    padding: 8px;
-    gap: 16px;
+    padding: 16px;
+    gap: 24px;
     align-items: center;
     margin: 0 24px;
 }
@@ -216,15 +231,45 @@ h6 {
     margin: 0 0 0 auto;
 }
 
-#user-pic-small {
+.user-pic-small {
     width: 48px;
     height: 48px;
     border-radius: 50%;
+    overflow: hidden;
 }
 
-#user-pic-large {
+.user-pic-large {
     width: 64px;
     height: 64px;
     border-radius: 50%;
-    margin-right: 12px;
+    overflow: hidden;
+}
+
+.trending-grid {
+    background-color: white;
+    box-shadow: 3px 3px 5px #CCCCCC;
+    border-radius: 8px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.profile-card{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: left;
+    align-items: center;
+    gap: 16px;
+}
+
+.profile-tag {
+    font-size: 1rem;
+    color: black;
+    padding-bottom: 2px;
+}
+
+.profile-status {
+    font-size: 1rem;
+    color: #666666;
 }
