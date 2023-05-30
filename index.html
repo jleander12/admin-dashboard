@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <title>Admin Dashboard</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
         <div class="header">
             <div class="search">
                 <span class="material-symbols-outlined black">search</span>
-                <input type="text">
+                <input id="search-bar" type="text">
                 <span class="material-symbols-outlined black">notifications</span>
                 <img id="user-pic-small" src="./pics/cat-profile-pic.jpg">
                 <p class="user-name">Thor Odinson</p>
@@ -32,7 +32,7 @@
         </div>
 
         <div class="sidebar">
-            <div class="icon-container">
+            <div id="title" class="icon-container">
                 <span class="material-symbols-outlined white">shelf_position</span>
                 <div>Dashboard</div>
             </div>
@@ -82,53 +82,87 @@
 
             <div class="your-projects">
                 <h6>Your Projects</h6>
-                <div class="card">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                <div class="project-card">
+                    <p class="title">Super Cool Project</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
                   </div>        
-                <div class="card">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                <div class="project-card">
+                    <p class="title">Less Cool Project</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
                 </div>        
-                <div class="card">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                <div class="project-card">
+                    <p class="title">Impossible App</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
                 </div>        
-                <div class="card">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                <div class="project-card">
+                    <p class="title">Easy Peasy App</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
                 </div>
-                <div class="card">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                <div class="project-card">
+                    <p class="title">Ad Blocker</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
                 </div>
-                <div class="card">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                <div class="project-card">
+                    <p class="title">Money Maker</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                </div>
+                <div class="project-card">
+                    <p class="title">Super Cool Project</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                  </div>        
+                <div class="project-card">
+                    <p class="title">Less Cool Project</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                </div>        
+                <div class="project-card">
+                    <p class="title">Impossible App</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                </div>        
+                <div class="project-card">
+                    <p class="title">Easy Peasy App</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                </div>
+                <div class="project-card">
+                    <p class="title">Ad Blocker</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                </div>
+                <div class="project-card">
+                    <p class="title">Money Maker</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
                 </div>
             </div>
 
-            <div class="announcements">
-                <h6>Announcements</h6>
-                <div class="card">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                </div>
-            </div>
+            <div class="project-extras">
 
-            <div class="trending">
-                <h6>Trending</h6>
-                <div class="card">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <div class="announcements">
+                    <h6>Announcements</h6>
+                    <div class="card">
+                        <p class="title">Site Maintenance</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        <br>
+                        <p class="title">Community Share Day</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        <br>
+                        <p class="title">Updated Privacy Policy</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    </div>
+                </div>
+
+                <div class="trending">
+                    <h6>Trending</h6>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        <br>
+                        <p class="title">Article Title</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        <br>
+                        <p class="title">Article Title</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        <br>
+                        <p class="title">Article Title</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    </div>
                 </div>
             </div>
         </div>
